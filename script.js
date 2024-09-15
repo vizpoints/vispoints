@@ -35,14 +35,14 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Developer","Software Engineer","Youtuber", "Freelancer", "Designer", "Photographer"],
+        strings: ["STUDY", "WORK", "VISIT"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["Developer","Software Engineer " ,"Youtuber", "Freelancer", "Designer", "Photographer"],
+        strings: ["STUDY", "WORK", "VISIT"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -69,4 +69,7 @@ $(document).ready(function(){
             }
         }
     });
+
+    var currentYear = new Date().getFullYear();
+    $('#now').text(currentYear);
 });
